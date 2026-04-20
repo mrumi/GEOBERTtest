@@ -5,8 +5,32 @@ from typing import Dict, Any, List
 
 
 # ==========================
+# JSON CONVERSION
+# ==========================
+
+def convert_json(database_path, out_json_file):
+    conn = sqlite3.connect(database_path)
+    gse_df = pd.read_sql_query("SELECT * FROM gse;", conn)
+    conn.close()
+
+    json_columns = ['sample_ids', 'supplementary_files', 'metadata_json', 'PRJNA_RUN_METADATA']
+
+    for col in json_columns:
+        if col in gse_df.columns:
+            # Apply json.loads, handling potential NaN or non-string values
+            gse_df[col] = gse_df[col].apply(lambda x: json.loads(x) if pd.notna(x) and isinstance(x, str) else x)
+
+
+    gse_df.to_json(out_json_file, orient="records", indent=4, date_format="iso")
+
+    print(f"Successfully exported '{OUTPUT_JSON_FILE}' and parsed JSON columns.")
+
+    files.download(out_json_file)
+
+# ==========================
 # UTILS
 # ==========================
+
 def ensure_dirs(base: str):
     for sub in ["raw", "studies", "samples", "runs"]:
         Path(base, sub).mkdir(parents=True, exist_ok=True)
