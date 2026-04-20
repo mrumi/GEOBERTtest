@@ -4,7 +4,7 @@ import json
 
 from preprocessing.fetching import init_db, ingest_gse_list, convert_json
 from preprocessing.spliting import ensure_dirs, split_gse_record
-from preprocessing.JSONmaking import save_study_json
+from preprocessing.JSONmaking import save_study_json, save_samples_json
 
 if __name__ == "__main__":
 
