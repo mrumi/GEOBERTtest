@@ -1,8 +1,8 @@
 import os
 from pathlib import Path
 
-from preprocessing.fetch_data import init_db, ingest_gse_list
-from preprocessing.split_data import convert_json, split_gse_record
+from preprocessing.fetch_data import init_db, ingest_gse_list, convert_json
+from preprocessing.split_data import split_gse_record
 from preprocessing.create_json import save_study_json
 
 if __name__ == "__main__":
@@ -12,7 +12,6 @@ if __name__ == "__main__":
     output_dir.mkdir(parents=True, exist_ok=True)
 
     database_path = os.path.join(output_dir, "geo_data.db")
-    
     init_db(database_path)
 
     # this will be changed to reading from file, temorarily manual
@@ -21,11 +20,14 @@ if __name__ == "__main__":
                         'GSE310817', 'GSE301140', 'GSE313101',
                         'GSE313071', 'GSE313068', 'GSE313067'
     ]
-    ingest_gse_list(retina_gse_list, database_path)
     
+    ingest_gse_list(retina_gse_list, database_path)
 
-    INPUT_JSON_PATH = "gse_data.json"   # your original file
-    OUTPUT_BASE_DIR = "processed_data"
+    out_json_file = os.path.join(output_dir, "gse_data.json")
+    convert_json(database_path, out_json_file)
+
+    #INPUT_JSON_PATH = ""   # your original file
+    #OUTPUT_BASE_DIR = "processed_data"
 
     data_dir = "../output/"
     data_dir.mkdir(parents=True, exist_ok=True)
@@ -35,9 +37,6 @@ if __name__ == "__main__":
     with open(INPUT_JSON_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    # Supports:
-    # - list of GSEs
-    # - single GSE object
     if isinstance(data, dict):
         data = [data]
 
@@ -46,6 +45,3 @@ if __name__ == "__main__":
 
     print(f"✅ Finished processing {len(data)} GSE record(s)")
 
-
-if __name__ == "__main__":
-    main()
