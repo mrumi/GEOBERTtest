@@ -5,13 +5,6 @@ from typing import Dict, Any, List
 
 
 # ==========================
-# CONFIG
-# ==========================
-INPUT_JSON_PATH = "gse_data.json"   # your original file
-OUTPUT_BASE_DIR = "processed_data"
-
-
-# ==========================
 # UTILS
 # ==========================
 def ensure_dirs(base: str):
@@ -108,27 +101,3 @@ def split_gse_record(gse: Dict[str, Any], output_dir: str):
         runs
     )
 
-
-# ==========================
-# MAIN
-# ==========================
-def main():
-    ensure_dirs(OUTPUT_BASE_DIR)
-
-    with open(INPUT_JSON_PATH, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    # Supports:
-    # - list of GSEs
-    # - single GSE object
-    if isinstance(data, dict):
-        data = [data]
-
-    for gse in data:
-        split_gse_record(gse, OUTPUT_BASE_DIR)
-
-    print(f"✅ Finished processing {len(data)} GSE record(s)")
-
-
-if __name__ == "__main__":
-    main()
