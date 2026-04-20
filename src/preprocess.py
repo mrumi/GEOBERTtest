@@ -55,3 +55,14 @@ if __name__ == "__main__":
         save_samples_json(raw_json_path = file, output_dir = sample_out_dir)
         
     print(f"✅ Finished making jsons for all processed studies and corresponding samples")
+
+    raw_file_dir = os.path.join(json_processed_dir, "raw")
+    processed_files = Path(raw_file_dir).glob('*.raw.json')
+    study_out_dir = os.path.join(output_dir, "semantic_studies")
+    sample_out_dir = os.path.join(output_dir, "semantic_samples")
+    
+    for file in processed_files:
+        save_study_json(raw_json_path = file, output_dir = study_out_dir)
+        save_samples_json(raw_json_path = file, output_dir = sample_out_dir)
+    
+    print(f"✅ Finished making jsons for all studies and corresponding samples")
