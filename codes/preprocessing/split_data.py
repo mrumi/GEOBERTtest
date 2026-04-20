@@ -50,7 +50,8 @@ def split_gse_record(gse: Dict[str, Any], output_dir: str):
         "metadata": {
             "metadata_json": gse.get("metadata_json"),
             "sample_common_metadata": gse.get("sample_ids", {}).get("common_metadata"),
-            "prjna_common_metadata": gse.get("PRJNA_RUN_METADATA", {}).get("common_metadata")
+            #"prjna_common_metadata": gse.get("PRJNA_RUN_METADATA", {}).get("common_metadata")
+            "prjna_common_metadata": (gse.get("PRJNA_RUN_METADATA") or {}).get("common_metadata")
         }
     }
 
@@ -83,7 +84,8 @@ def split_gse_record(gse: Dict[str, Any], output_dir: str):
     # ---------- RUNS ----------
     runs: List[Dict[str, Any]] = []
 
-    run_list = gse.get("PRJNA_RUN_METADATA", {}).get("runs_specific_metadata", [])
+    #run_list = gse.get("PRJNA_RUN_METADATA", {}).get("runs_specific_metadata", [])
+    run_list = (gse.get("PRJNA_RUN_METADATA") or {}).get("runs_specific_metadata", [])
 
     for run in run_list:
         run_doc = {
