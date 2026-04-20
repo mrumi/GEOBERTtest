@@ -291,6 +291,5 @@ def convert_json(database_path: str, out_json_file: str):
 
     print(f"Successfully exported '{OUTPUT_JSON_FILE}' and parsed JSON columns.")
 
-    files.download(out_json_file)
 
 
