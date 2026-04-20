@@ -1,0 +1,1 @@
+GEOparse pandas sqlalchemy sentence-transformers faiss-cpu tqdm
