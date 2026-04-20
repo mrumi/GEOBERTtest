@@ -3,9 +3,14 @@ from preprocessing.fetch_data import init_db, ingest_gse_list
 from preprocessing.split_data import split_gse_record
 from preprocessing.create_json import save_study_json
 
+import os
+
 if __name__ == "__main__":
 
-    DB_PATH = "/content/geo_data.db"
+    data_dir = "../output/"
+    data_dir.mkdir(parents=True, exist_ok=True)
+
+    DB_PATH = os.path.join(data_dir, "geo_data.db")
     
     init_db(DB_PATH)
     retina_gse_list = [ "GSE293983", "GSE288573", "GSE298665",
