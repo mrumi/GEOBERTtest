@@ -8,7 +8,7 @@ from typing import Dict, Any, List
 # JSON CONVERSION
 # ==========================
 
-def convert_json(database_path, out_json_file):
+def convert_json(database_path: str, out_json_file: str):
     conn = sqlite3.connect(database_path)
     gse_df = pd.read_sql_query("SELECT * FROM gse;", conn)
     conn.close()
