@@ -1,13 +1,13 @@
-# geo_test
+# GEOTest
 # Installation
 
-git clone https://github.com/mrumi/geo_test.git
+git clone https://github.com/mrumi/GEOTest.git
 
 conda env create -f environment.yml
 
-conda activate geo_test
+conda activate GEOTest
 
-cd geo_test
+cd GEOTest
 
 # Data Preprocessing
 
