@@ -2,9 +2,9 @@ import os
 from pathlib import Path
 import json
 
-from preprocessing.fetch_data import init_db, ingest_gse_list, convert_json
-from preprocessing.split_data import ensure_dirs, split_gse_record
-from preprocessing.create_json import save_study_json
+from preprocessing.fetching import init_db, ingest_gse_list, convert_json
+from preprocessing.spliting import ensure_dirs, split_gse_record
+from preprocessing.JSONmaking import save_study_json
 
 if __name__ == "__main__":
 
