@@ -1,0 +1,14 @@
+name: geo_test
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - GEOparse
+  - sqlalchemy
+  - sentence-transformers
+  - faiss-cpu
+  - tqdm
+       
