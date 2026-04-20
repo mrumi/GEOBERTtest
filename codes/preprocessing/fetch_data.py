@@ -11,12 +11,9 @@ import time
 from GEOparse import get_GEO
 from tqdm import tqdm
 
-DB_PATH = "/content/geo_data.db"
-
-
 # ---------------------- DB Init ----------------------
-def init_db():
-    conn = sqlite3.connect(DB_PATH)
+def init_db(database_path):
+    conn = sqlite3.connect(database_PATH)
     cur = conn.cursor()
 
     cur.execute("""
