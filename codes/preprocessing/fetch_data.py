@@ -13,7 +13,7 @@ from tqdm import tqdm
 
 # ---------------------- DB Init ----------------------
 def init_db(database_path):
-    conn = sqlite3.connect(database_PATH)
+    conn = sqlite3.connect(database_path)
     cur = conn.cursor()
 
     cur.execute("""
