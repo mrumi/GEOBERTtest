@@ -170,8 +170,8 @@ def split_common_vs_specific(sample_list):
 
 
 # ---------------------- MAIN INGEST ----------------------
-def ingest_gse_list(gse_list):
-    conn = sqlite3.connect(DB_PATH)
+def ingest_gse_list(gse_list, database_path):
+    conn = sqlite3.connect(database_path)
     cur = conn.cursor()
 
     for gse_id in tqdm(gse_list, desc="🔽 Downloading GSEs"):
