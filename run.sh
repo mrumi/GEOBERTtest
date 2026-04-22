@@ -1,4 +1,4 @@
 #!/bin/sh
 
 source activate geo_test
-python my_code.py -i data/sample.tsv -o sample_out
+python main.py -i data/sample.tsv -o sample_out ## main has not been created yet.
