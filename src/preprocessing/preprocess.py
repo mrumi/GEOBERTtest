@@ -5,9 +5,9 @@ import argparse
 import pandas as pd
 
 
-from preprocessing.fetching import init_db, ingest_gse_list, convert_json
-from preprocessing.spliting import ensure_dirs, split_gse_record
-from preprocessing.JSONmaking import save_study_json, save_samples_json
+from fetching import init_db, ingest_gse_list, convert_json
+from spliting import ensure_dirs, split_gse_record
+from JSONmaking import save_study_json, save_samples_json
 
 def main(input_file, output_dir):
     output_dir = Path(output_dir)
