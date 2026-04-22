@@ -1,28 +1,27 @@
 import os
 from pathlib import Path
 import json
+import argparse
+import pandas as pd
+
 
 from preprocessing.fetching import init_db, ingest_gse_list, convert_json
 from preprocessing.spliting import ensure_dirs, split_gse_record
 from preprocessing.JSONmaking import save_study_json, save_samples_json
 
-if __name__ == "__main__":
-
-    output_dir = "../output/"
+def main(input_file, output_dir):
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     database_path = os.path.join(output_dir, "geo_data.db")
     init_db(database_path)
 
-    # this will be changed to reading from file, temorarily manual
-    retina_gse_list = [ "GSE293983", "GSE288573", "GSE298665",
-                       "GSE254430", "GSE306375", "GSE261489",
-                        'GSE310817', 'GSE301140', 'GSE313101',
-                        'GSE313071', 'GSE313068', 'GSE313067'
-    ]
+    # get the GSE accessions from the input file
+    gse_data = pd.read_csv(input_file, sep = "\t")
+    retina_gse_list = gse_data["Accession"].tolist()
     
     ingest_gse_list(retina_gse_list, database_path)
+    print(f"✅ Finished GSE downloading")
 
     out_json_file = os.path.join(output_dir, "gse_data.json")
     convert_json(database_path, out_json_file)
@@ -66,3 +65,13 @@ if __name__ == "__main__":
         save_samples_json(raw_json_path = file, output_dir = sample_out_dir)
     
     print(f"✅ Finished making jsons for all studies and corresponding samples")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-i", "--input", dest="input", required=True, help="Path to the input file")
+    parser.add_argument("-o", "--output", dest="output", required=True, help="Path to the output directory")
+    
+    args = parser.parse_args()
+    main(args.input, args.output)
+
+
