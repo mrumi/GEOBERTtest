@@ -17,7 +17,7 @@ def main(input_file, output_dir):
     init_db(database_path)
 
     # get the GSE accessions from the input file
-    gse_data = pd.read_csv(input_file, sep = "\t")
+    gse_data = pd.read_csv(input_file, sep = None, engine = 'python')
     retina_gse_list = gse_data["Accession"].tolist()
     
     ingest_gse_list(retina_gse_list, database_path)
