@@ -12,4 +12,6 @@ dependencies:
   - faiss-cpu
   - tqdm
   - beautifulsoup
+  - python-dotenv
+  - qdrant-client>=1.10.0,<2.0.0
        
