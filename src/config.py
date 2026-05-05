@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+from type_util import SimpleNamespace
 
 
 # ===============================
@@ -94,7 +95,6 @@ INVALID_VALUES = {
     "tissue",
     ""
 }
-from types import SimpleNamespace
 
 settings = SimpleNamespace(
     QDRANT_URL=QDRANT_URL,
