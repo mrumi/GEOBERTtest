@@ -161,16 +161,14 @@ def save_samples_json(raw_json_path, output_dir):
     raw = json.loads(Path(raw_json_path).read_text(encoding="utf-8"))
 
     out = generate_samples_semantic(raw, out_dir)
-    if not out:
-        return
-
-    # 🔥 REMOVE NULL / EMPTY FIELDS
-    out = remove_nulls(out)
-
-    out_path = out_dir / f"{out['gse_id']}.samples.json"
-    out_path.write_text(json.dumps(out, indent=2, ensure_ascii=False), encoding="utf-8")
-
-    print(f"✅ Samples semantic JSON saved → {out_path}")
+    if out:
+        # 🔥 REMOVE NULL / EMPTY FIELDS
+        out = remove_nulls(out)
+    
+        out_path = out_dir / f"{out['gse_id']}.samples.json"
+        out_path.write_text(json.dumps(out, indent=2, ensure_ascii=False), encoding="utf-8")
+    
+        print(f"✅ Samples semantic JSON saved → {out_path}")
 
 
 def _first(val):
@@ -187,12 +185,17 @@ def _join(val, sep="; "):
     return val
 
 
-def generate_study_semantic(raw: Dict[str, Any]) -> Dict[str, Any]:
+def generate_study_semantic(raw: Dict[str, Any], output_dir) -> Dict[str, Any]:
     """
     Convert raw GEO JSON into clean study-level semantic JSON.
     """
 
     gse_id = raw.get("gse_id")
+
+    out_study_path = output_dir / f"{gse_id}.study.json"
+    if Path(out_path).exists:
+        return
+    
     title = raw.get("title")
     organism = raw.get("organism")
     summary = raw.get("summary")
@@ -277,11 +280,12 @@ def save_study_json(raw_json_path: str, output_dir: str):
     with open(raw_json_path, "r", encoding="utf-8") as f:
         raw = json.load(f)
 
-    study = generate_study_semantic(raw)
-
-    out_path = output_dir / f"{study['gse_id']}.study.json"
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(study, f, indent=2)
-
-    print(f"✅ Study semantic JSON saved: {out_path}")
+    study = generate_study_semantic(raw, output_dir)
+    
+    if study:
+        out_path = output_dir / f"{study['gse_id']}.study.json"
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(study, f, indent=2)
+    
+        print(f"✅ Study semantic JSON saved: {out_path}")
 
