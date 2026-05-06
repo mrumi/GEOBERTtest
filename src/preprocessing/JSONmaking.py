@@ -57,7 +57,7 @@ def parse_relations(relations):
 def generate_samples_semantic(raw, output_dir):
     gse_id = raw["gse_id"]
     out_sample_path = output_dir / f"{gse_id}.samples.json"
-    if Path(out_sample_path).exists:
+    if Path(out_sample_path).exists():
         return
     
     raw_samples = raw["sample_ids"]["samples_specific_metadata"]
@@ -193,7 +193,7 @@ def generate_study_semantic(raw: Dict[str, Any], output_dir) -> Dict[str, Any]:
     gse_id = raw.get("gse_id")
 
     out_study_path = output_dir / f"{gse_id}.study.json"
-    if Path(out_path).exists:
+    if Path(out_path).exists():
         return
     
     title = raw.get("title")
