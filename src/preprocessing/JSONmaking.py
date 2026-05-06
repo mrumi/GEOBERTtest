@@ -151,6 +151,9 @@ def remove_nulls(obj):
 
 
 def save_samples_json(raw_json_path, output_dir):
+    out_dir = Path(output_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    
     raw = json.loads(Path(raw_json_path).read_text(encoding="utf-8"))
 
     out = generate_samples_semantic(raw)
