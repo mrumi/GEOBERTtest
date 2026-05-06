@@ -33,16 +33,19 @@ def main(input_file, output_dir):
     
     ensure_dirs(json_processed_dir)
 
-    with open(out_json_file, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    if isinstance(data, dict):
-        data = [data]
-
-    for gse in data:
-        split_gse_record(gse, json_processed_dir)
-
-    print(f"✅ Finished processing {len(data)} GSE record(s)")
+    if Path(out_json_file).exists():
+        with open(out_json_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    
+        if isinstance(data, dict):
+            data = [data]
+    
+        for gse in data:
+            split_gse_record(gse, json_processed_dir)
+    
+        print(f"✅ Finished processing {len(data)} GSE record(s)")
+    else:
+        print(f"⚠️ Error: No GSE data to process. The file does not exist")
 
 
     raw_file_dir = os.path.join(json_processed_dir, "raw")
@@ -58,14 +61,18 @@ def main(input_file, output_dir):
 
     raw_file_dir = os.path.join(json_processed_dir, "raw")
     processed_files = Path(raw_file_dir).glob('*.raw.json')
+    check_files = list(Path(raw_file_dir).glob('*.raw.json'))
     study_out_dir = os.path.join(output_dir, "semantic_studies")
     sample_out_dir = os.path.join(output_dir, "semantic_samples")
     
-    for file in processed_files:
-        save_study_json(raw_json_path = file, output_dir = study_out_dir)
-        save_samples_json(raw_json_path = file, output_dir = sample_out_dir)
+    if check_files:
+        for file in processed_files:
+            save_study_json(raw_json_path = file, output_dir = study_out_dir)
+            save_samples_json(raw_json_path = file, output_dir = sample_out_dir)
     
-    print(f"✅ Finished making jsons for all studies and corresponding samples")
+        print(f"✅ Finished making jsons for all studies and corresponding samples")
+    else:
+        print(f"⚠️ Error: No sample or study to process")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
