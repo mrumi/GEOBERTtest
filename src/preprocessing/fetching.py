@@ -284,15 +284,15 @@ def convert_json(database_path: str, out_json_file: str):
     gse_df = pd.read_sql_query("SELECT * FROM gse;", conn)
     conn.close()
 
-    json_columns = ['sample_ids', 'supplementary_files', 'metadata_json', 'PRJNA_RUN_METADATA']
-
-    for col in json_columns:
-        if col in gse_df.columns:
-            # Apply json.loads, handling potential NaN or non-string values
-            gse_df[col] = gse_df[col].apply(lambda x: json.loads(x) if pd.notna(x) and isinstance(x, str) else x)
-
-
-    gse_df.to_json(out_json_file, orient="records", indent=4, date_format="iso")
+    if gse_df.empty:
+        print(f"⚠️ warning: local GEO database is empty. No GSE information is found")
+    else:
+        json_columns = ['sample_ids', 'supplementary_files', 'metadata_json', 'PRJNA_RUN_METADATA']
+        for col in json_columns:
+            if col in gse_df.columns:
+                # Apply json.loads, handling potential NaN or non-string values
+                gse_df[col] = gse_df[col].apply(lambda x: json.loads(x) if pd.notna(x) and isinstance(x, str) else x)
+        gse_df.to_json(out_json_file, orient="records", indent=4, date_format="iso")
 
     print(f"Successfully exported '{OUTPUT_JSON_FILE}' and parsed JSON columns.")
 
