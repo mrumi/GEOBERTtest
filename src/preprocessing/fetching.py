@@ -174,6 +174,11 @@ def ingest_gse_list(gse_list, database_path):
     conn = sqlite3.connect(database_path)
     cur = conn.cursor()
 
+    gse_df = pd.read_sql_query("SELECT * FROM gse;", conn)
+    if not gse_df.empty:
+        exist_gse = gse_df['gse_id'].tolist()
+        gse_list = list(set(gse_list) - set(exist_gse))
+
     for gse_id in tqdm(gse_list, desc="🔽 Downloading GSEs"):
         try:
             gse = get_GEO(geo=gse_id, destdir=None, silent=True)
