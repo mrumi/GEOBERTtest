@@ -161,9 +161,6 @@ def save_samples_json(raw_json_path, output_dir):
     # 🔥 REMOVE NULL / EMPTY FIELDS
     out = remove_nulls(out)
 
-    out_dir = Path(output_dir)
-    out_dir.mkdir(parents=True, exist_ok=True)
-
     out_path = out_dir / f"{out['gse_id']}.samples.json"
     out_path.write_text(json.dumps(out, indent=2, ensure_ascii=False), encoding="utf-8")
 
