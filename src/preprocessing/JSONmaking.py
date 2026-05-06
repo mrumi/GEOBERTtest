@@ -54,8 +54,12 @@ def parse_relations(relations):
     return biosample, sra
 
 
-def generate_samples_semantic(raw):
+def generate_samples_semantic(raw, output_dir):
     gse_id = raw["gse_id"]
+    out_sample_path = output_dir / f"{gse_id}.samples.json"
+    if Path(out_sample_path).exists:
+        return
+    
     raw_samples = raw["sample_ids"]["samples_specific_metadata"]
 
     samples = []
@@ -156,7 +160,9 @@ def save_samples_json(raw_json_path, output_dir):
     
     raw = json.loads(Path(raw_json_path).read_text(encoding="utf-8"))
 
-    out = generate_samples_semantic(raw)
+    out = generate_samples_semantic(raw, out_dir)
+    if not out:
+        return
 
     # 🔥 REMOVE NULL / EMPTY FIELDS
     out = remove_nulls(out)
