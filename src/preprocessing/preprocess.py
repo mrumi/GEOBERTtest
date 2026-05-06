@@ -14,7 +14,8 @@ def main(input_file, output_dir):
     output_dir.mkdir(parents=True, exist_ok=True)
 
     database_path = os.path.join(output_dir, "geo_data.db")
-    init_db(database_path)
+    if not Path(database_path).exists():
+        init_db(database_path)
 
     # get the GSE accessions from the input file
     gse_data = pd.read_csv(input_file, sep = None, engine = 'python')
