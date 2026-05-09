@@ -1,0 +1,94 @@
+{
+  "organism": [
+    "mus musculus",
+    "rattus norvegicus",
+    "homo sapiens"
+  ],
+  "tissue": [
+    "tumor",
+    "retina",
+    "pancreatic ductal adenocarcinoma",
+    "subcutanous fascia",
+    "trophoblast cell line",
+    "blood plasma",
+    "mouse retinal pigment epithelium rpe",
+    "retinas",
+    "placenta",
+    "cord blood",
+    "stomach fundus",
+    "cell line",
+    "peripheral blood",
+    "retinal organoids",
+    "retinal organoid",
+    "skin",
+    "eye",
+    "bone marrow"
+  ],
+  "disease": [
+    "healthy",
+    "cg"
+  ],
+  "assay_type": [
+    "genome binding occupancy profiling by genome tiling array",
+    "methylation profiling by genome tiling array",
+    "methylation profiling by high throughput sequencing",
+    "genome binding occupancy profiling by high throughput sequencing",
+    "expression profiling by high throughput sequencing"
+  ],
+  "library_strategy": [
+    "atac seq",
+    "rna seq",
+    "bisulfite seq"
+  ],
+  "library_source": [
+    "transcriptomic",
+    "genomic",
+    "transcriptomic single cell"
+  ],
+  "library_selection": [
+    "cdna",
+    "reduced representation"
+  ],
+  "molecule": [
+    "polya rna",
+    "total rna",
+    "genomic dna"
+  ],
+  "instrument_model": [
+    "illumina novaseq 6000",
+    "illumina novaseq x plus",
+    "illumina nextseq 500",
+    "illumina hiseq 2500"
+  ],
+  "status": [
+    "public"
+  ],
+  "genotype": [
+    "prom1 ko",
+    "homozygous",
+    "rpgrip1 nm 020366 4 c 2108t c p ile703thr",
+    "wt",
+    "nc",
+    "rpgrip1 nm 020366 4 c 1687c t",
+    "siglec 6 overexpressing"
+  ],
+  "cell_line": [
+    "pe high risk",
+    "control 1",
+    "ms vus",
+    "htr8 svneo cells",
+    "mrpe prom1ko 22",
+    "lca 1",
+    "mrpe prom1ko 26",
+    "a549",
+    "control",
+    "mrpe wt"
+  ],
+  "cell_type": [
+    "retinal cells",
+    "rpe",
+    "human alveolar epithelial cells",
+    "bmms",
+    "human choriotrophoblast cells"
+  ]
+}
