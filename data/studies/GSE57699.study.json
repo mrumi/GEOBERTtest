@@ -1,0 +1,34 @@
+{
+  "gse_id": "GSE57699",
+  "title": "Gene expression analysis of liver and heart from wildtype and ABCB5 mutant mice",
+  "organism": "Mus musculus",
+  "study_summary": "Abcb5 is a member of the ATP-Binding Cassette (ABC) transporter superfamily. It is an energy dependent transporter and its role is unknown yet. We are characterizing this transporter at the genomic and protein level. We know that it is highly expressed in pigmented cells, including pigmented cells of the CNS (retinal pigment epithelium and basal ganglion cells). We found it highly expressed in melanotic melanoma and in alveolar soft part sarcoma.",
+  "experimental_design": {
+    "overall_design": "Total RNA obtained from liver and heart of 3-4 male homozygous ABCB5 mutant and 4 male wildtype mice",
+    "experimental_type": "Expression profiling by array",
+    "tissue": "liver"
+  },
+  "sequencing_technology": {
+    "platform_id": "GPL6885",
+    "molecule": "total RNA",
+    "channel_count": "1"
+  },
+  "experimental_protocols": {
+    "extraction_protocol": [
+      "RNA was extracted with Trizol reagent, followed by clean-up with QIAGEN RNeasy midi kit in accordance with the prescribed protocol provided with the kit. Quality control was performed with gel electrophoreses."
+    ]
+  },
+  "data_processing": [
+    "The data were normalised using cubic spline normalisation with Illumina Genomestudio 2011.1"
+  ],
+  "study_metadata": {
+    "status": "Public on Dec 01 2024",
+    "submission_date": "May 15 2014",
+    "last_update_date": "Dec 01 2024",
+    "bioproject": "PRJNA247761"
+  },
+  "series_relationships": {
+    "is_superseries": false,
+    "is_subseries": false
+  }
+}

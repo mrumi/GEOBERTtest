@@ -1,0 +1,70 @@
+{
+  "gse_id": "GSE117956",
+  "sample_summary": {
+    "total_samples": 2
+  },
+  "samples": [
+    {
+      "gsm_id": "GSM3315842",
+      "title": "Hs_retina_MAC_Input mRNA",
+      "source_name": "Retina (spanning 11 cell types)",
+      "biological_metadata": {
+        "tissue": "retina",
+        "cell_type": "mixed sample (non-demultiplexed)",
+        "organism": "Homo sapiens"
+      },
+      "experimental_conditions": {
+        "age": "65"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina HiSeq 2500",
+        "platform_id": "GPL16791"
+      },
+      "descriptions": [
+        "All the cells were taken from the same eye donor."
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN09745483",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX4493139"
+      },
+      "raw_extra_metadata": {
+        "donor": "18-1077W",
+        "disease_state": "healthy",
+        "ethnicity": "Caucasian",
+        "tissue_region": "Macula (mac)"
+      }
+    },
+    {
+      "gsm_id": "GSM3315843",
+      "title": "Hs_retina_PER_Input mRNA",
+      "source_name": "Retina (spanning 11 cell types)",
+      "biological_metadata": {
+        "tissue": "retina",
+        "cell_type": "mixed sample (non-demultiplexed)",
+        "organism": "Homo sapiens"
+      },
+      "experimental_conditions": {
+        "age": "65"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina HiSeq 2500",
+        "platform_id": "GPL16791"
+      },
+      "descriptions": [
+        "All the cells were taken from the same eye donor."
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN09745482",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX4493140"
+      },
+      "raw_extra_metadata": {
+        "donor": "18-1077W",
+        "disease_state": "healthy",
+        "ethnicity": "Caucasian",
+        "tissue_region": "Peripheral (per)"
+      }
+    }
+  ]
+}

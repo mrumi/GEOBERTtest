@@ -1,0 +1,34 @@
+{
+  "gse_id": "GSE62020",
+  "title": "Rod photoreceptors degeneration in the rd1 model of retinitis pigmentosa involves a cascade of events leading to proteasome dysfunction",
+  "organism": "Mus musculus",
+  "study_summary": "Retinitis pigmentosa is an inherited disease with sequential retinal degeneration of rod then cone photoreceptors leading to blindness. As in this human syndrome the rd1 mouse model carries a recessive mutation in the rod-specific cGMP phosphodiesterase beta subunit gene leading to rod followed by cone photoreceptor death. The cascade of early events leading to the induction of rod cell death through apoptosis remains unknown.",
+  "experimental_design": {
+    "overall_design": "Samples from purified retinal RNA from mice aged at different post-natal days were taken",
+    "experimental_type": "Expression profiling by array",
+    "tissue": "retina"
+  },
+  "sequencing_technology": {
+    "platform_id": "GPL1261",
+    "molecule": "total RNA",
+    "channel_count": "1"
+  },
+  "experimental_protocols": {
+    "extraction_protocol": [
+      "Neural retinas from wild-type control (C3Hwt/wt) and rd1 (C3Hrd1/rd1) mice were dissected at different post-natal days. Total RNA was purified onto cesium gradient."
+    ]
+  },
+  "data_processing": [
+    "Normalization: RMA, data analysis: R/Bioconductor"
+  ],
+  "study_metadata": {
+    "status": "Public on Sep 25 2020",
+    "submission_date": "Oct 03 2014",
+    "last_update_date": "Sep 26 2020",
+    "bioproject": "PRJNA262966"
+  },
+  "series_relationships": {
+    "is_superseries": false,
+    "is_subseries": false
+  }
+}

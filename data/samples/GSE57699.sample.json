@@ -1,0 +1,368 @@
+{
+  "gse_id": "GSE57699",
+  "sample_summary": {
+    "total_samples": 15
+  },
+  "samples": [
+    {
+      "gsm_id": "GSM1386953",
+      "title": "liver_wildtype_rep1",
+      "source_name": "liver_wildtype",
+      "biological_metadata": {
+        "tissue": "liver",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 1"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204715",
+        "sex": "male"
+      }
+    },
+    {
+      "gsm_id": "GSM1386954",
+      "title": "liver_wildtype_rep2",
+      "source_name": "liver_wildtype",
+      "biological_metadata": {
+        "tissue": "liver",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 2"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204716",
+        "sex": "male"
+      }
+    },
+    {
+      "gsm_id": "GSM1386955",
+      "title": "liver_wildtype_rep3",
+      "source_name": "liver_wildtype",
+      "biological_metadata": {
+        "tissue": "liver",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 3"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204717",
+        "sex": "male"
+      }
+    },
+    {
+      "gsm_id": "GSM1386956",
+      "title": "liver_wildtype_rep4",
+      "source_name": "liver_wildtype",
+      "biological_metadata": {
+        "tissue": "liver",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 4"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204718",
+        "sex": "male"
+      }
+    },
+    {
+      "gsm_id": "GSM1386957",
+      "title": "liver_homozygous_rep1",
+      "source_name": "liver_homozygous_ABCB5_mutant",
+      "biological_metadata": {
+        "tissue": "liver",
+        "genotype": "homozygous ABCB5 mutant",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 1"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204755",
+        "sex": "male"
+      }
+    },
+    {
+      "gsm_id": "GSM1386958",
+      "title": "liver_homozygous_rep2",
+      "source_name": "liver_homozygous_ABCB5_mutant",
+      "biological_metadata": {
+        "tissue": "liver",
+        "genotype": "homozygous ABCB5 mutant",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 2"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204756",
+        "sex": "male"
+      }
+    },
+    {
+      "gsm_id": "GSM1386959",
+      "title": "liver_homozygous_rep3",
+      "source_name": "liver_homozygous_ABCB5_mutant",
+      "biological_metadata": {
+        "tissue": "liver",
+        "genotype": "homozygous ABCB5 mutant",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 3"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204757",
+        "sex": "male"
+      }
+    },
+    {
+      "gsm_id": "GSM1386960",
+      "title": "heart_wildtype_rep1",
+      "source_name": "heart_wildtype",
+      "biological_metadata": {
+        "tissue": "heart",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 1"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204715",
+        "sex": "male"
+      }
+    },
+    {
+      "gsm_id": "GSM1386961",
+      "title": "heart_wildtype_rep2",
+      "source_name": "heart_wildtype",
+      "biological_metadata": {
+        "tissue": "heart",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 2"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204716",
+        "sex": "male"
+      }
+    },
+    {
+      "gsm_id": "GSM1386962",
+      "title": "heart_wildtype_rep3",
+      "source_name": "heart_wildtype",
+      "biological_metadata": {
+        "tissue": "heart",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 3"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204717",
+        "sex": "male"
+      }
+    },
+    {
+      "gsm_id": "GSM1386963",
+      "title": "heart_wildtype_rep4",
+      "source_name": "heart_wildtype",
+      "biological_metadata": {
+        "tissue": "heart",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 4"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204718",
+        "sex": "male"
+      }
+    },
+    {
+      "gsm_id": "GSM1386964",
+      "title": "heart_homozygous_rep1",
+      "source_name": "heart_homozygous_ABCB5_mutant",
+      "biological_metadata": {
+        "tissue": "heart",
+        "genotype": "homozygous ABCB5 mutant",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 1"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204755",
+        "sex": "male"
+      }
+    },
+    {
+      "gsm_id": "GSM1386965",
+      "title": "heart_homozygous_rep2",
+      "source_name": "heart_homozygous_ABCB5_mutant",
+      "biological_metadata": {
+        "tissue": "heart",
+        "genotype": "homozygous ABCB5 mutant",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 2"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204756",
+        "sex": "male"
+      }
+    },
+    {
+      "gsm_id": "GSM1386966",
+      "title": "heart_homozygous_rep3",
+      "source_name": "heart_homozygous_ABCB5_mutant",
+      "biological_metadata": {
+        "tissue": "heart",
+        "genotype": "homozygous ABCB5 mutant",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 3"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204757",
+        "sex": "male"
+      }
+    },
+    {
+      "gsm_id": "GSM1386967",
+      "title": "heart_homozygous_rep4",
+      "source_name": "heart_homozygous_ABCB5_mutant",
+      "biological_metadata": {
+        "tissue": "heart",
+        "genotype": "homozygous ABCB5 mutant",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6J-Tyr"
+      },
+      "experimental_conditions": {
+        "age": "17 weeks"
+      },
+      "technical_metadata": {
+        "platform_id": "GPL6885"
+      },
+      "descriptions": [
+        "replicate 4"
+      ],
+      "raw_extra_metadata": {
+        "mouse_id": "30204758",
+        "sex": "male"
+      }
+    }
+  ]
+}

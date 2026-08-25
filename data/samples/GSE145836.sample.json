@@ -1,0 +1,872 @@
+{
+  "gse_id": "GSE145836",
+  "sample_summary": {
+    "total_samples": 36
+  },
+  "samples": [
+    {
+      "gsm_id": "GSM4337029",
+      "title": "RS-GHPTD1_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174965",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794918"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GHPT"
+      }
+    },
+    {
+      "gsm_id": "GSM4337030",
+      "title": "RS-GHPTD2_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174964",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794919"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GHPT"
+      }
+    },
+    {
+      "gsm_id": "GSM4337031",
+      "title": "RS-GHPTD3_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174963",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794920"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GHPT"
+      }
+    },
+    {
+      "gsm_id": "GSM4337032",
+      "title": "RS-GHPTD4_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174962",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794921"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GHPT"
+      }
+    },
+    {
+      "gsm_id": "GSM4337033",
+      "title": "RS-GHPTD5_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174961",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794922"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GHPT"
+      }
+    },
+    {
+      "gsm_id": "GSM4337034",
+      "title": "RS-GHPTD6_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174960",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794923"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GHPT"
+      }
+    },
+    {
+      "gsm_id": "GSM4337035",
+      "title": "RS-GT1D1_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174959",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794924"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GT1"
+      }
+    },
+    {
+      "gsm_id": "GSM4337036",
+      "title": "RS-GT1D2_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174958",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794925"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GT1"
+      }
+    },
+    {
+      "gsm_id": "GSM4337037",
+      "title": "RS-GT1D3_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174957",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794926"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GT1"
+      }
+    },
+    {
+      "gsm_id": "GSM4337038",
+      "title": "RS-GT1D4_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174956",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794927"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GT1"
+      }
+    },
+    {
+      "gsm_id": "GSM4337039",
+      "title": "RS-GT1D5_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174955",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794928"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GT1"
+      }
+    },
+    {
+      "gsm_id": "GSM4337040",
+      "title": "RS-GT1D6_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174954",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794929"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GT1"
+      }
+    },
+    {
+      "gsm_id": "GSM4337041",
+      "title": "RS-TD1_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174974",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794930"
+      },
+      "raw_extra_metadata": {
+        "infection": "Non_infected"
+      }
+    },
+    {
+      "gsm_id": "GSM4337042",
+      "title": "RS-TD2_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174973",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794931"
+      },
+      "raw_extra_metadata": {
+        "infection": "Non_infected"
+      }
+    },
+    {
+      "gsm_id": "GSM4337043",
+      "title": "RS-TD3_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174972",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794932"
+      },
+      "raw_extra_metadata": {
+        "infection": "Non_infected"
+      }
+    },
+    {
+      "gsm_id": "GSM4337044",
+      "title": "RS-TD4_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174971",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794933"
+      },
+      "raw_extra_metadata": {
+        "infection": "Non_infected"
+      }
+    },
+    {
+      "gsm_id": "GSM4337045",
+      "title": "RS-TD5_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174970",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794934"
+      },
+      "raw_extra_metadata": {
+        "infection": "Non_infected"
+      }
+    },
+    {
+      "gsm_id": "GSM4337046",
+      "title": "RS-TD6_L001-ds",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24676"
+      },
+      "descriptions": [
+        "Total RNA of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174969",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794935"
+      },
+      "raw_extra_metadata": {
+        "infection": "Non_infected"
+      }
+    },
+    {
+      "gsm_id": "GSM4337047",
+      "title": "GHPT_D1_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174968",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794936"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GHPT"
+      }
+    },
+    {
+      "gsm_id": "GSM4337048",
+      "title": "GHPT_D2_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174967",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794937"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GHPT"
+      }
+    },
+    {
+      "gsm_id": "GSM4337049",
+      "title": "GHPT_D3_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174966",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794938"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GHPT"
+      }
+    },
+    {
+      "gsm_id": "GSM4337050",
+      "title": "GHPT_D4_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174980",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794939"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GHPT"
+      }
+    },
+    {
+      "gsm_id": "GSM4337051",
+      "title": "GHPT_D5_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174979",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794940"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GHPT"
+      }
+    },
+    {
+      "gsm_id": "GSM4337052",
+      "title": "GHPT_D6_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174978",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794941"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GHPT"
+      }
+    },
+    {
+      "gsm_id": "GSM4337053",
+      "title": "GT1_D1_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174977",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794942"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GT1"
+      }
+    },
+    {
+      "gsm_id": "GSM4337054",
+      "title": "GT1_D2_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174976",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794943"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GT1"
+      }
+    },
+    {
+      "gsm_id": "GSM4337055",
+      "title": "GT1_D3_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174975",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794944"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GT1"
+      }
+    },
+    {
+      "gsm_id": "GSM4337056",
+      "title": "GT1_D4_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174953",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794945"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GT1"
+      }
+    },
+    {
+      "gsm_id": "GSM4337057",
+      "title": "GT1_D5_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174952",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794946"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GT1"
+      }
+    },
+    {
+      "gsm_id": "GSM4337058",
+      "title": "GT1_D6_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174987",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794947"
+      },
+      "raw_extra_metadata": {
+        "infection": "T_gondii_GT1"
+      }
+    },
+    {
+      "gsm_id": "GSM4337059",
+      "title": "T_D1_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174986",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794948"
+      },
+      "raw_extra_metadata": {
+        "infection": "Non_infected"
+      }
+    },
+    {
+      "gsm_id": "GSM4337060",
+      "title": "T_D2_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174985",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794949"
+      },
+      "raw_extra_metadata": {
+        "infection": "Non_infected"
+      }
+    },
+    {
+      "gsm_id": "GSM4337061",
+      "title": "T_D3_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174984",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794950"
+      },
+      "raw_extra_metadata": {
+        "infection": "Non_infected"
+      }
+    },
+    {
+      "gsm_id": "GSM4337062",
+      "title": "T_D4_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174983",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794951"
+      },
+      "raw_extra_metadata": {
+        "infection": "Non_infected"
+      }
+    },
+    {
+      "gsm_id": "GSM4337063",
+      "title": "T_D5_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174982",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794952"
+      },
+      "raw_extra_metadata": {
+        "infection": "Non_infected"
+      }
+    },
+    {
+      "gsm_id": "GSM4337064",
+      "title": "T_D6_R1_001",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "Human retinal Mueller glial cell",
+        "organism": "Homo sapiens"
+      },
+      "technical_metadata": {
+        "library_strategy": "ncRNA-Seq",
+        "instrument_model": "Illumina NextSeq 500",
+        "platform_id": "GPL18573"
+      },
+      "descriptions": [
+        "Small RNA-Seq of Human retinal mueller glial cells infected with T. gondii"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN14174981",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX7794953"
+      },
+      "raw_extra_metadata": {
+        "infection": "Non_infected"
+      }
+    }
+  ]
+}

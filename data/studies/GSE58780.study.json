@@ -1,0 +1,36 @@
+{
+  "gse_id": "GSE58780",
+  "title": "Retinoblastoma gene expression data",
+  "organism": "Homo sapiens",
+  "study_summary": "Retinoblastoma is the most common intraocular cancer of infancy and childhood, with an incidence of one case per 15,000 - 20,000 live births. An early event in retinoblastoma genesis is a functional loss of both alleles of the RB1 gene. However, other genes are likely to be involved in the development of this cancer. In this study we sought to build a comprehensive molecular portrait of this cancer by performing transcriptomic, methylomic, genomic profiling of primary retinoblastoma samples. Most of the patients whose tumors were studied had received no treatment prior to surgical enucleation.",
+  "experimental_design": {
+    "overall_design": "Gene expression of 63 samples retinoblastomas tumor and 3 fetal retina were assesed using the Hg-U133 Plus 2.0 Affymetrix array",
+    "experimental_type": "Expression profiling by array",
+    "tissue": "retinoblastoma"
+  },
+  "sequencing_technology": {
+    "platform_id": "GPL28718",
+    "molecule": "total RNA",
+    "channel_count": "1"
+  },
+  "experimental_protocols": {
+    "growth_protocol": "Immediately following enucleation, a needle was inserted through the anterior chamber of the eye to extract a tumor sample by aspiration. The tumor specimen was placed in RPMI medium on ice, cells were re-suspended, counted and separated into two tubes (for DNA and RNA preparation). The tubes were then centrifuged to remove all media and snap frozen for later extraction.",
+    "extraction_protocol": [
+      "Tumor RNA was extracted using Qiazol (Qiagen, Courtaboeuf, France) according to the manufacturer instructions and purified using miRNeasy Mini kit (Qiagen)."
+    ]
+  },
+  "data_processing": [
+    "Signal reconstruction was performed with the RMA algorithm as implemented in Bioconductor affy package on R statistical software using the Dai custom CDF package: HGU133Plus2_Hs_ENTREZG,  Brainarray Custom CDF EntrezG version 23, Batch effects were corrected with the help of the bioconductor package SVA,"
+  ],
+  "study_metadata": {
+    "status": "Public on Jul 06 2021",
+    "submission_date": "Jun 24 2014",
+    "last_update_date": "Sep 24 2021",
+    "bioproject": "PRJNA253482"
+  },
+  "series_relationships": {
+    "is_superseries": false,
+    "is_subseries": true,
+    "parent_series_id": "GSE58785"
+  }
+}

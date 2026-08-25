@@ -1,0 +1,332 @@
+{
+  "gse_id": "GSE129355",
+  "sample_summary": {
+    "total_samples": 12
+  },
+  "samples": [
+    {
+      "gsm_id": "GSM3711545",
+      "title": "ColcreER; Tbx4flox/flox whole lung rep1",
+      "source_name": "whole lung tissue",
+      "biological_metadata": {
+        "tissue": "lung",
+        "genotype": "ColcreER; Tbx4flox/flox",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6"
+      },
+      "experimental_conditions": {
+        "age": "adult mouse"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina HiSeq 3000",
+        "platform_id": "GPL21493"
+      },
+      "descriptions": [
+        "C2",
+        "GEO whole lung"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN11351544",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX5648355"
+      }
+    },
+    {
+      "gsm_id": "GSM3711546",
+      "title": "ColcreER; Tbx4flox/flox whole lung rep2",
+      "source_name": "whole lung tissue",
+      "biological_metadata": {
+        "tissue": "lung",
+        "genotype": "ColcreER; Tbx4flox/flox",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6"
+      },
+      "experimental_conditions": {
+        "age": "adult mouse"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina HiSeq 3000",
+        "platform_id": "GPL21493"
+      },
+      "descriptions": [
+        "C3",
+        "GEO whole lung"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN11351543",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX5648356"
+      }
+    },
+    {
+      "gsm_id": "GSM3711547",
+      "title": "WT whole lung rep1",
+      "source_name": "whole lung tissue",
+      "biological_metadata": {
+        "tissue": "lung",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6"
+      },
+      "experimental_conditions": {
+        "age": "adult mouse"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina HiSeq 3000",
+        "platform_id": "GPL21493"
+      },
+      "descriptions": [
+        "C4",
+        "GEO whole lung"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN11351542",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX5648357"
+      }
+    },
+    {
+      "gsm_id": "GSM3711548",
+      "title": "WT whole lung rep2",
+      "source_name": "whole lung tissue",
+      "biological_metadata": {
+        "tissue": "lung",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6"
+      },
+      "experimental_conditions": {
+        "age": "adult mouse"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina HiSeq 3000",
+        "platform_id": "GPL21493"
+      },
+      "descriptions": [
+        "C5",
+        "GEO whole lung"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN11351541",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX5648358"
+      }
+    },
+    {
+      "gsm_id": "GSM3711549",
+      "title": "WT whole lung rep3",
+      "source_name": "whole lung tissue",
+      "biological_metadata": {
+        "tissue": "lung",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6"
+      },
+      "experimental_conditions": {
+        "age": "adult mouse"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina HiSeq 3000",
+        "platform_id": "GPL21493"
+      },
+      "descriptions": [
+        "C6",
+        "GEO whole lung"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN11351540",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX5648359"
+      }
+    },
+    {
+      "gsm_id": "GSM3711550",
+      "title": "WT whole lung rep4",
+      "source_name": "whole lung tissue",
+      "biological_metadata": {
+        "tissue": "lung",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6"
+      },
+      "experimental_conditions": {
+        "age": "adult mouse"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina HiSeq 3000",
+        "platform_id": "GPL21493"
+      },
+      "descriptions": [
+        "C7",
+        "GEO whole lung"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN11351539",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX5648360"
+      }
+    },
+    {
+      "gsm_id": "GSM3711551",
+      "title": "ColcreER; Tbx4flox/flox EV rep1",
+      "source_name": "lung mesenchymal cell EV",
+      "biological_metadata": {
+        "tissue": "lung",
+        "genotype": "ColcreER; Tbx4flox/flox",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6"
+      },
+      "experimental_conditions": {
+        "age": "adult mouse"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina HiSeq 3000",
+        "platform_id": "GPL21493"
+      },
+      "descriptions": [
+        "C2",
+        "GEO EV"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN11351538",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX5648361"
+      }
+    },
+    {
+      "gsm_id": "GSM3711552",
+      "title": "ColcreER; Tbx4flox/flox EV rep2",
+      "source_name": "lung mesenchymal cell EV",
+      "biological_metadata": {
+        "tissue": "lung",
+        "genotype": "ColcreER; Tbx4flox/flox",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6"
+      },
+      "experimental_conditions": {
+        "age": "adult mouse"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina HiSeq 3000",
+        "platform_id": "GPL21493"
+      },
+      "descriptions": [
+        "C3",
+        "GEO EV"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN11351537",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX5648362"
+      }
+    },
+    {
+      "gsm_id": "GSM3711553",
+      "title": "WT EV rep1",
+      "source_name": "lung mesenchymal cell EV",
+      "biological_metadata": {
+        "tissue": "lung",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6"
+      },
+      "experimental_conditions": {
+        "age": "adult mouse"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina HiSeq 3000",
+        "platform_id": "GPL21493"
+      },
+      "descriptions": [
+        "C4",
+        "GEO EV"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN11351536",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX5648363"
+      }
+    },
+    {
+      "gsm_id": "GSM3711554",
+      "title": "WT EV rep2",
+      "source_name": "lung mesenchymal cell EV",
+      "biological_metadata": {
+        "tissue": "lung",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6"
+      },
+      "experimental_conditions": {
+        "age": "adult mouse"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina HiSeq 3000",
+        "platform_id": "GPL21493"
+      },
+      "descriptions": [
+        "C5",
+        "GEO EV"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN11351535",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX5648364"
+      }
+    },
+    {
+      "gsm_id": "GSM3711555",
+      "title": "WT EV rep3",
+      "source_name": "lung mesenchymal cell EV",
+      "biological_metadata": {
+        "tissue": "lung",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6"
+      },
+      "experimental_conditions": {
+        "age": "adult mouse"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina HiSeq 3000",
+        "platform_id": "GPL21493"
+      },
+      "descriptions": [
+        "C6",
+        "GEO EV"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN11351534",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX5648365"
+      }
+    },
+    {
+      "gsm_id": "GSM3711556",
+      "title": "WT EV rep4",
+      "source_name": "lung mesenchymal cell EV",
+      "biological_metadata": {
+        "tissue": "lung",
+        "genotype": "wild type",
+        "organism": "Mus musculus",
+        "strain": "C57BL/6"
+      },
+      "experimental_conditions": {
+        "age": "adult mouse"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina HiSeq 3000",
+        "platform_id": "GPL21493"
+      },
+      "descriptions": [
+        "C7",
+        "GEO EV"
+      ],
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN11351533",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX5648366"
+      }
+    }
+  ]
+}

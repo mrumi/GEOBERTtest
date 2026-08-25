@@ -1,0 +1,41 @@
+{
+  "gse_id": "GSE58785",
+  "title": "Pan-genomic study of primary human retinoblastoma samples",
+  "organism": "Homo sapiens",
+  "study_summary": "Retinoblastoma is the most common intraocular cancer of infancy and childhood, with an incidence of one case per 15,000 - 20,000 live births. An early event in retinoblastoma genesis is a functional loss of both alleles of the RB1 gene. However, other genes are likely to be involved in the development of this cancer. In this study we sought to build a comprehensive molecular portrait of this cancer by performing transcriptomic, methylomic, as well as genomic profiling of primary retinoblastoma samples. The patients whose tumors were studied had received no treatment prior to surgical enucleation.",
+  "experimental_design": {
+    "overall_design": "Refer to individual Series: 118 samples distincts; Expression profiling by array (62 samples distincts, 66 files with replicates); Genome variation profiling by SNP array (44 samples by SNP 370k, 22 samples by SNP 610k and 28 samples by Cytoscan); Methylation profiling by genome tiling array (70 samples distincts, 74 files with replicates); Genome variation profiling by genome tiling array (51 samples by BAC 3k and 26 samples by BAC 5k)",
+    "experimental_type": "Expression profiling by array; Genome variation profiling by SNP array; Methylation profiling by genome tiling array; Genome variation profiling by genome tiling array",
+    "tissue": "retinoblastoma"
+  },
+  "sequencing_technology": {
+    "platform_id": "GPL6985,GPL8887,GPL13534,GPL16131,GPL18861,GPL28718,GPL29807",
+    "molecule": "total RNA",
+    "channel_count": "1"
+  },
+  "experimental_protocols": {
+    "growth_protocol": "Immediately following enucleation, a needle was inserted through the anterior chamber of the eye to extract a tumor sample by aspiration. The tumor specimen was placed in RPMI medium on ice, cells were re-suspended, counted and separated into two tubes (for DNA and RNA preparation). The tubes were then centrifuged to remove all media and snap frozen for later extraction.",
+    "extraction_protocol": [
+      "Tumor RNA was extracted using Qiazol (Qiagen, Courtaboeuf, France) according to the manufacturer instructions and purified using miRNeasy Mini kit (Qiagen)."
+    ]
+  },
+  "data_processing": [
+    "Signal reconstruction was performed with the RMA algorithm as implemented in Bioconductor affy package on R statistical software using the Dai custom CDF package: HGU133Plus2_Hs_ENTREZG,  Brainarray Custom CDF EntrezG version 23, Batch effects were corrected with the help of the bioconductor package SVA,"
+  ],
+  "study_metadata": {
+    "status": "Public on Jul 06 2021",
+    "submission_date": "Jun 24 2014",
+    "last_update_date": "Mar 02 2022",
+    "bioproject": "PRJNA253480"
+  },
+  "series_relationships": {
+    "is_superseries": true,
+    "subseries_ids": [
+      "GSE58780",
+      "GSE58781",
+      "GSE58783",
+      "GSE58784"
+    ],
+    "is_subseries": false
+  }
+}

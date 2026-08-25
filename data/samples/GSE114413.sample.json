@@ -1,0 +1,52 @@
+{
+  "gse_id": "GSE114413",
+  "sample_summary": {
+    "total_samples": 2
+  },
+  "samples": [
+    {
+      "gsm_id": "GSM3141394",
+      "title": "12-hpf retina",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "retina",
+        "organism": "Danio rerio",
+        "strain": "AB fishes/wild type"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24995"
+      },
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN09206410",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX4080964"
+      },
+      "raw_extra_metadata": {
+        "developmental_stage": "12 hpf"
+      }
+    },
+    {
+      "gsm_id": "GSM3141395",
+      "title": "72-hpf retina",
+      "source_name": "Retina",
+      "biological_metadata": {
+        "tissue": "retina",
+        "organism": "Danio rerio",
+        "strain": "AB fishes/wild type"
+      },
+      "technical_metadata": {
+        "library_strategy": "RNA-Seq",
+        "instrument_model": "Illumina NovaSeq 6000",
+        "platform_id": "GPL24995"
+      },
+      "accessions": {
+        "biosample": "//www.ncbi.nlm.nih.gov/biosample/SAMN09206409",
+        "sra_experiment": "//www.ncbi.nlm.nih.gov/sra?term=SRX4080965"
+      },
+      "raw_extra_metadata": {
+        "developmental_stage": "72 hpf"
+      }
+    }
+  ]
+}
