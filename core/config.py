@@ -114,7 +114,7 @@ class Settings(BaseSettings):
     # Hybrid Search Weights 
     # ============================================================
     ALPHA_DENSE  : float = 0.65
-    ALPHA_SPARSE : float = 0.40
+    ALPHA_SPARSE : float = 0.35
 
     # ============================================================
     # Metadata Boost Values 
