@@ -231,7 +231,7 @@ docker run -d \
   --name postgres \
   -e POSTGRES_USER=postgres \
   -e POSTGRES_PASSWORD=YOUR_DATABASE_PASSWORD \
-  -e POSTGRES_DB= geobert \
+  -e POSTGRES_DB=geobert \
   -p 5432:5432 \
   -v postgres_storage:/var/lib/postgresql/data \
   postgres:17
