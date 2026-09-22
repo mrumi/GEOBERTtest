@@ -133,7 +133,7 @@ GROQ_API_KEY=your_groq_api_key_here
 
 # PostgreSQL async connection string
 # Local: postgresql+asyncpg://postgres:yourpassword@localhost:5432/geobert
-DATABASE_URL=postgresql+asyncpg://postgres:yourpassword@localhost:5432/geobert
+DATABASE_URL=postgresql+asyncpg://postgres:YOUR_DATABASE_PASSWORD@localhost:5432/geobert
 
 # JWT secret 
 JWT_SECRET_KEY=your_64_character_random_hex_string_here
@@ -216,19 +216,32 @@ All commands run from `GEOBERT/` with the virtual environment activated.
 
 ---
 
-## Database Setup with Alembic
+## Database Setup with Docker
 
 GeoBERT uses PostgreSQL for users, sessions, and message history with full result snapshots.
 
-> `alembic/env.py` reads `DATABASE_URL` directly from your `.env` file. You do not need to edit `alembic.ini`.
-
-**Step 1 — Create the database:**
-```sql
--- In your PostgreSQL client:
-CREATE DATABASE geobert;
+**Step 1 — Create a named Docker volume:**
+```bash
+docker volume create postgres_storage
 ```
 
-**Step 2 — Run all migrations:**
+**Step 2 — Run the Qdrant container:**
+```bash
+docker run -d \
+  --name postgres \
+  -e POSTGRES_USER=postgres \
+  -e POSTGRES_PASSWORD=YOUR_DATABASE_PASSWORD \
+  -e POSTGRES_DB= geobert \
+  -p 5432:5432 \
+  -v postgres_storage:/var/lib/postgresql/data \
+  postgres:17
+```
+
+## Database Align with Alembic
+
+> `alembic/env.py` reads `DATABASE_URL` directly from your `.env` file. You do not need to edit `alembic.ini`.
+
+**Step 1 — Run all migrations:**
 ```bash
 alembic upgrade head
 ```
@@ -237,7 +250,7 @@ This runs two migrations in order:
 - `603f15ad2dd3` — creates `users`, `sessions`, `messages` tables
 - `f01d3e76d98d` — adds `studies`, `samples`, `dashboard_stats` JSONB columns to `messages`
 
-**Step 3 — Verify:**
+**Step 2 — Verify:**
 ```bash
 alembic current
 # Should show: f01d3e76d98d (head)
