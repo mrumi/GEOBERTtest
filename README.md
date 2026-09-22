@@ -104,7 +104,7 @@ GEOBERT/
 ## Prerequisites
 
 - **Python 3.11+** — [python.org](https://www.python.org/downloads/)
-- **Node.js 20+** — required by Next.js 16 — [nodejs.org]([https://nodejs.org/](https://nodejs.org/en/download))
+- **Node.js 20+** — required by Next.js 16 — [nodejs.org](https://nodejs.org/en/download)
 - **Docker Desktop** — required for Qdrant — [docker.com](https://www.docker.com/products/docker-desktop/)
 - **PostgreSQL 15+** — local install or managed cloud database
 - **Groq API key** — [console.groq.com](https://console.groq.com/)
