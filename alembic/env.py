@@ -1,8 +1,12 @@
 import asyncio
 from logging.config import fileConfig
+from models.email_token import EmailToken  # noqa: F401
 from sqlalchemy import pool
 from sqlalchemy.ext.asyncio import async_engine_from_config
+
 from alembic import context
+
+# ── Make the project root importable (core/, models/) ──────
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 

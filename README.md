@@ -542,3 +542,45 @@ Everything is tracked in one SQLite table, `gse_registry`, keyed by `gse_id`:
 | `max_concurrent_fetches` | 4 | Parallel GSE downloads |
 | `geo_fetch_timeout_seconds` | 90 | Per-download HTTPS timeout |
 | `skip_discovery` | False | Skip NCBI search; just keep working through the existing registry |
+
+
+## Verification Email & Password Reset Setup
+
+This project uses [Brevo](https://www.brevo.com/) to send email verification links and password reset emails.
+
+### 1. Create a Brevo Account
+
+1. Visit [https://www.brevo.com/](https://www.brevo.com/) and create a free account.
+2. Verify your email address and complete the account setup.
+3. Log in to your Brevo dashboard.
+
+### 2. Generate Brevo API Key
+
+1. Open your Brevo dashboard.
+2. Navigate to **Settings → SMTP & API → API Keys**.
+3. Open the **API Keys** tab.
+4. Click **Generate a new API key**.
+5. Give it a name.
+6. Generate and copy the API key.
+
+
+### 3. Verify Sender Email
+
+Brevo requires a verified sender email address before sending emails.
+
+1. Navigate to **Settings → Senders, Domains & Dedicated IPs → Senders**.
+2. Click **Add a sender**.
+3. Enter your sender name and email address.
+4. Complete the email verification process.
+5. Use this verified email as `BREVO_SENDER_EMAIL`.
+
+### 4. Configure Environment Variables
+
+Replace the placeholder values in env:
+
+- `BREVO_API_KEY`: API key generated from your Brevo dashboard.
+- `BREVO_SENDER_EMAIL`: Email address verified in Brevo.
+- `BREVO_SENDER_NAME`: Name displayed as the email sender.
+- `FRONTEND_URL`: Frontend application URL used in verification and password reset links.
+
+After configuration, restart the backend application to load the environment variables.

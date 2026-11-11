@@ -49,6 +49,30 @@ class TokenResponse(BaseModel):
     token_type   : str = "bearer"
 
 
+class RegisterResponse(BaseModel):
+    message : str
+    email   : EmailStr
+
+
+class EmailRequest(BaseModel):
+    email : EmailStr
+
+
+class TokenConfirm(BaseModel):
+    token : str = Field(min_length=10, max_length=200)
+
+
+class ResetPasswordRequest(BaseModel):
+    token        : str = Field(min_length=10, max_length=200)
+    new_password : str = Field(min_length=8)
+
+
+class MessageResponse(BaseModel):
+    message : str
+
+
+
+
 # ============================================================
 # Sessions
 # ============================================================
@@ -100,7 +124,7 @@ class QueryRequest(BaseModel):
 
 class StudyResult(BaseModel):
     gse_id          : str
-    relevance_score : float   # 0-1, sigmoid-normalized 
+    relevance_score : float   # 0-1, sigmoid-normalized — safe to display
     geo_link        : str
     organism        : str
     tissue          : str
@@ -159,7 +183,7 @@ class DatasetDetail(BaseModel):
     library_strategy : str
     instrument_model : str
     bioproject_url   : str
-    fields       : dict[str, str]      
+    fields       : dict[str, str]      # field name -> full text
     sample_count : int
     samples      : list[SampleResult]
     is_superseries   : bool = False

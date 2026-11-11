@@ -7,8 +7,7 @@
 
 import uuid
 from datetime import datetime
-
-from sqlalchemy import String, DateTime, func
+from sqlalchemy import String, DateTime, Boolean, func
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -31,6 +30,7 @@ class User(Base):
     # allowed set is validated at the API layer instead
     # (api/schemas.py's UserRole Literal type).
     role: Mapped[str] = mapped_column(String(50), nullable=False, default="researcher")
+    is_verified: Mapped[bool] = mapped_column(Boolean, nullable=False, default=False)
 
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
 

@@ -41,38 +41,48 @@ class Settings(BaseSettings):
     # https://huggingface.co/settings/tokens
     HF_TOKEN : str | None = None
 
-    # PostgreSQL for sessions/users,
-    # added for the multi-user API.
+    # New — PostgreSQL for sessions/users (not in original notebook,
+    # added for the multi-user API).
     DATABASE_URL : str
 
-    # JWT auth secret.
+    # New — JWT auth secret (not in original notebook).
     JWT_SECRET_KEY         : str 
     JWT_ALGORITHM          : str 
     JWT_EXPIRE_MINUTES     : int 
 
+    # Email (Brevo transactional API)
+    BREVO_API_KEY      : str
+    BREVO_SENDER_EMAIL : str
+    BREVO_SENDER_NAME  : str = "GeoBERT"
+    FRONTEND_URL       : str = "http://localhost:3000"
+
+    VERIFY_TOKEN_EXPIRE_HOURS     : int = 24
+    RESET_TOKEN_EXPIRE_MINUTES    : int = 30
+    EMAIL_RESEND_COOLDOWN_SECONDS : int = 60
+
     # ============================================================
-    # Collection Names 
+    # Collection Names (Cell 1)
     # ============================================================
     STUDY_COLLECTION  : str = "geo_study_collection"
     SAMPLE_COLLECTION : str = "geo_sample_collection"
 
     # ============================================================
-    # Model Names 
+    # Model Names (Cell 1)
     # ============================================================
     DENSE_EMBED_MODEL    : str = "neuml/pubmedbert-base-embeddings"
     SPARSE_EMBED_MODEL   : str = "prithivida/Splade_PP_en_v1"
     CROSS_ENCODER_MODEL  : str = "cross-encoder/ms-marco-MiniLM-L-6-v2"
     TOKENIZER_MODEL      : str = "neuml/pubmedbert-base-embeddings"
 
-    # LLM models 
+
     # llama-3.1-8b-instant llama-3.3-70b-versatile  meta-llama/llama-4-scout-17b-16e-instruct
     # openai/gpt-oss-120b qwen/qwen3-32b
-    
+    # LLM models (Cell 2)
     GROQ_QUERY_MODEL  : str = "openai/gpt-oss-120b"
     GROQ_ANSWER_MODEL : str = "openai/gpt-oss-120b"
 
     # ============================================================
-    # Directory Paths 
+    # Directory Paths (Cell 2)
     # ============================================================
     STUDY_DIR    : str = "data/studies"
     SAMPLE_DIR   : str = "data/samples"
@@ -80,7 +90,7 @@ class Settings(BaseSettings):
     CACHE_DIR    : str = "cache"
 
     # ============================================================
-    # Registry File Paths 
+    # Registry File Paths (Cell 2, derived)
     # ============================================================
     @property
     def STUDY_REGISTRY_PATH(self) -> str:
@@ -95,14 +105,14 @@ class Settings(BaseSettings):
         return os.path.join(self.CACHE_DIR, "ontology_cache.db")
 
     # ============================================================
-    # Chunking Parameters 
+    # Chunking Parameters (Cell 2)
     # ============================================================
     CHUNK_SIZE_TOKENS    : int = 256
     CHUNK_OVERLAP_TOKENS : int = 50
     NEIGHBOR_WINDOW       : int = 1
 
     # ============================================================
-    # Retrieval Parameters 
+    # Retrieval Parameters (Cell 2)
     # ============================================================
     TOP_K_STUDY_RETRIEVAL     : int = 250
     TOP_K_SAMPLE_RETRIEVAL    : int = 50
@@ -111,13 +121,13 @@ class Settings(BaseSettings):
     SIM_THRESHOLD              : float = 0.20
 
     # ============================================================
-    # Hybrid Search Weights 
+    # Hybrid Search Weights (Cell 2)
     # ============================================================
     ALPHA_DENSE  : float = 0.65
     ALPHA_SPARSE : float = 0.35
 
     # ============================================================
-    # Metadata Boost Values 
+    # Metadata Boost Values (Cell 2)
     # ============================================================
     EXACT_PAYLOAD_MATCH_BOOST : float = 0.15
     FIELD_FOCUS_BOOST         : float = 0.15

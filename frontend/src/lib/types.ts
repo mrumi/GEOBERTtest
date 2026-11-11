@@ -143,3 +143,17 @@ export interface UserOut {
   role: string;
   created_at: string;
 }
+
+export interface RegisterResponse {
+  message: string;
+  email: string;
+}
+
+export interface MessageResponse {
+  message: string;
+}
+
+export interface ResetPasswordPayload {
+  token: string;
+  new_password: string;
+}

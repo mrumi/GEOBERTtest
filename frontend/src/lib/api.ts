@@ -13,8 +13,11 @@ import type {
   DatasetDetail,
   TokenResponse,
   RegisterPayload,
+  RegisterResponse,
   LoginPayload,
   UserOut,
+  MessageResponse,
+  ResetPasswordPayload,
 } from "./types";
 
 const API_BASE_URL =
@@ -83,9 +86,41 @@ export async function login(payload: LoginPayload): Promise<TokenResponse> {
   );
 }
 
-export async function register(payload: RegisterPayload): Promise<TokenResponse> {
-  return apiFetch<TokenResponse>(
+export async function register(payload: RegisterPayload): Promise<RegisterResponse> {
+  return apiFetch<RegisterResponse>(
     "/auth/register",
+    { method: "POST", body: JSON.stringify(payload) },
+    false
+  );
+}
+
+export async function verifyEmail(token: string): Promise<MessageResponse> {
+  return apiFetch<MessageResponse>(
+    "/auth/verify-email",
+    { method: "POST", body: JSON.stringify({ token }) },
+    false
+  );
+}
+
+export async function resendVerification(email: string): Promise<MessageResponse> {
+  return apiFetch<MessageResponse>(
+    "/auth/resend-verification",
+    { method: "POST", body: JSON.stringify({ email }) },
+    false
+  );
+}
+
+export async function forgotPassword(email: string): Promise<MessageResponse> {
+  return apiFetch<MessageResponse>(
+    "/auth/forgot-password",
+    { method: "POST", body: JSON.stringify({ email }) },
+    false
+  );
+}
+
+export async function resetPassword(payload: ResetPasswordPayload): Promise<MessageResponse> {
+  return apiFetch<MessageResponse>(
+    "/auth/reset-password",
     { method: "POST", body: JSON.stringify(payload) },
     false
   );

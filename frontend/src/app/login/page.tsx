@@ -3,13 +3,13 @@
 import * as React from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { Dna, AlertCircle, Loader2 } from "lucide-react";
+import { Dna, AlertCircle, Loader2, Eye, EyeOff } from "lucide-react";
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import { login, ApiError } from "@/lib/api";
+import { login, resendVerification, ApiError } from "@/lib/api";
 import { setToken } from "@/lib/auth-store";
 
 export default function LoginPage() {
@@ -17,21 +17,36 @@ export default function LoginPage() {
 
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
+  const [showPassword, setShowPassword] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
+  const [needsVerification, setNeedsVerification] = React.useState(false);
+  const [resendMessage, setResendMessage] = React.useState<string | null>(null);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
+    setNeedsVerification(false);
+    setResendMessage(null);
     setLoading(true);
     try {
       const { access_token } = await login({ email, password });
       setToken(access_token);
       router.push("/");
     } catch (err) {
+      if (err instanceof ApiError && err.status === 403) setNeedsVerification(true);
       setError(err instanceof ApiError ? err.message : "Login failed. Please try again.");
     } finally {
       setLoading(false);
+    }
+  }
+
+  async function handleResend() {
+    try {
+      const res = await resendVerification(email);
+      setResendMessage(res.message);
+    } catch {
+      setResendMessage("Could not send the email. Please try again.");
     }
   }
 
@@ -62,22 +77,50 @@ export default function LoginPage() {
             </div>
 
             <div className="space-y-1.5">
-              <Label htmlFor="password">Password</Label>
-              <Input
-                id="password"
-                type="password"
-                required
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="••••••••"
-                autoComplete="current-password"
-              />
+              <div className="flex items-center justify-between">
+                <Label htmlFor="password">Password</Label>
+                <Link href="/forgot-password" className="text-xs text-primary underline underline-offset-2">
+                  Forgot password?
+                </Link>
+              </div>
+              <div className="relative">
+                <Input
+                  id="password"
+                  type={showPassword ? "text" : "password"}
+                  required
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  placeholder="••••••••"
+                  autoComplete="current-password"
+                  className="pr-10"
+                />
+
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground"
+                >
+                  {showPassword ? (
+                    <EyeOff className="size-4" />
+                  ) : (
+                    <Eye className="size-4" />
+                  )}
+                </button>
+              </div>
             </div>
 
             {error && (
               <div className="flex items-center gap-2 rounded-md border border-destructive/40 bg-destructive/10 px-3 py-2 text-sm text-destructive">
                 <AlertCircle className="size-4 shrink-0" />
                 {error}
+              </div>
+            )}
+            {needsVerification && (
+              <div className="space-y-2">
+                <Button type="button" variant="outline" className="w-full" onClick={handleResend}>
+                  Resend verification email
+                </Button>
+                {resendMessage && <p className="text-sm text-muted-foreground">{resendMessage}</p>}
               </div>
             )}
 
