@@ -5,7 +5,7 @@
 from typing import Optional
 
 
-def format_reranked_context_for_llm(reranked_context: list[dict], max_studies: int = 5) -> str:
+def format_reranked_context_for_llm(reranked_context: list[dict], max_studies: int = 12) -> str:
     if not reranked_context:
         return "No relevant datasets were retrieved."
 
@@ -60,7 +60,7 @@ def format_reranked_context_for_llm(reranked_context: list[dict], max_studies: i
     return "\n".join(evidence_lines)
 
 
-def format_sample_context_for_llm(sample_context: list[dict], max_samples: int = 15) -> str:
+def format_sample_context_for_llm(sample_context: list[dict], max_samples: int = 8) -> str:
     if not sample_context:
         return "No sample-level (GSM) evidence was retrieved for this query."
 
@@ -124,7 +124,7 @@ def generate_answer(
     Args:
         groq_client       : Groq client instance.
         groq_answer_model : settings.GROQ_ANSWER_MODEL.
-        (other args unchanged from Cell 19)
+        
     """
 
     if not reranked_context and not sample_context:
